@@ -1,0 +1,8 @@
+# Verweigere Zugriff auf alle Dateien im secure-data Verzeichnis
+Order deny,allow
+Deny from all
+
+# Erlaube nur den Zugriff von PHP-Skripten
+<Files "*.php">
+    Allow from all
+</Files>
